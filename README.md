@@ -76,6 +76,12 @@ FlowForge AVA replaces manual WhatsApp lead handling with a coordinated system o
 7. Meeting booked
 8. Admin notified
 
+## Demo
+
+See FlowForge AVA in action below.
+https://github.com/user-attachments/assets/c8574ce2-5e4e-486c-840f-e153035ab1dd
+
+
 ## Tech Stack
 
 | Layer | Tool |
