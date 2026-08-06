@@ -36,6 +36,8 @@ Businesses lose qualified WhatsApp leads because replies are slow, follow-ups ar
 
 FlowForge AVA replaces manual WhatsApp lead handling with a coordinated system of four AI agents. Incoming messages are routed through an **Orchestrator Agent** to specialized agents for **Q&A**, **Scheduling**, and **CRM** — qualifying leads, answering questions, and booking meetings automatically, with a clean handoff to a human whenever the conversation actually needs one.
 
+> **AVA (Autonomous Virtual Assistant) is the AI identity that powers FlowForge's multi-agent customer interaction system. While users interact with a single assistant, AVA orchestrates specialized backend agents responsible for lead qualification, customer support, scheduling, and CRM synchronization.
+
 ## Business Impact
 
 - Allows sales teams to focus on qualified prospects instead of repetitive conversations
