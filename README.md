@@ -3,7 +3,7 @@ FlowForge Ava is a production-ready AI lead operating system for WhatsApp. It qu
 
 ![n8n](https://img.shields.io/badge/n8n-workflow-EA4B71?style=flat-square)
 ![Docker](https://img.shields.io/badge/Docker-containerized-2496ED?style=flat-square)
-![Groq](https://img.shields.io/badge/Groq-Llama%203.3%2070B-F55036?style=flat-square)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4.1-412991?style=flat-square)
 ![WhatsApp](https://img.shields.io/badge/WhatsApp-Business%20API-25D366?style=flat-square)
 ![Airtable](https://img.shields.io/badge/Airtable-CRM-18BFFF?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
@@ -57,6 +57,12 @@ FlowForge AVA replaces manual WhatsApp lead handling with a coordinated system o
 
 <p align="center">
   <img src="architecture.drawio.png" width="900" alt="FlowForge AVA Architecture">
+</p>
+
+## Workflow Preview
+
+<p align="center">
+  <img src="workflow-preview.png" width="1000" alt="FlowForge AVA n8n Workflow">
 </p>
 
 ## Workflow
