@@ -56,7 +56,7 @@ FlowForge AVA replaces manual WhatsApp lead handling with a coordinated system o
 ## Architecture
 
 <p align="center">
-  <img src="architecture.png" width="900" alt="FlowForge AVA Architecture">
+  <img src="architecture.drawio.png" width="900" alt="FlowForge AVA Architecture">
 </p>
 
 ## Workflow
