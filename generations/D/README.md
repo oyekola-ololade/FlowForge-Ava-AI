@@ -1,6 +1,16 @@
 # FlowForge AVA — Generation D
 
+[← Main README](../../README.md) · [Current architecture](ARCHITECTURE.md)
+
 **Status:** **CURRENT PUBLIC IMPLEMENTATION GENERATION**
+
+## Contents
+
+- [What this generation contains](#what-this-generation-contains)
+- [Architecture](#architecture)
+- [Current architecture decisions](#current-architecture-decisions)
+- [Verification boundary](#current-verification-boundary)
+- [Media](#media)
 
 ## What this generation contains
 
@@ -22,6 +32,12 @@ Current repository evidence includes:
 - critical-path SVG;
 - genuine recorded portfolio demo linked from the main README;
 - security and verification documentation.
+
+## Architecture
+
+[Open the Generation D architecture →](ARCHITECTURE.md)
+
+The architecture page maps the current entrypoint, session state, AVA orchestrator, Q&A/scheduling/CRM specialists, deterministic state checks, lead-priority actions, human handoff and error path. It also links to the actual current architecture image, workflow screenshot and critical-path SVG.
 
 ## Current architecture decisions
 
@@ -47,8 +63,6 @@ Implementation structure and a real demo exist. Fresh repeatable fixtures are st
 ## Media
 
 Generation D already has real current media, so no empty placeholders are created.
-
-See:
 
 - `../../architecture.drawio.png`
 - `../../workflow-preview.png`
