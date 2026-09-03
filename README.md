@@ -29,7 +29,7 @@ AVA explores how one visible assistant can coordinate focused backend agents whi
 - user fallback and admin error-alert paths
 - explicit rules against invented pricing, ROI, or unsupported timelines
 
-See [`workflow/README.md`](workflow/README.md) before importing the workflow. Historical public exports contain environment-specific resource/credential references that must be replaced before reuse.
+See [`workflow/README.md`](workflow/README.md) before importing [`workflow/flowforge-ava.json`](workflow/flowforge-ava.json). The export contains environment-specific resource/credential references that must be replaced before reuse.
 
 ## Architecture
 
@@ -80,33 +80,22 @@ Earlier iterations explored other providers. The checked-in workflow generation 
 ## Engineering decisions
 
 ### One orchestrator, focused specialist agents
-
 The visible AVA agent coordinates bounded Q&A, scheduling, and CRM roles instead of making one prompt responsible for every external action.
 
 ### Deterministic checks around model behavior
-
 Code/IF nodes handle payload extraction, intent flags, restart state, output markers, handoff state, and other exact control decisions. AI is not treated as the only control plane.
 
 ### Human handoff remains explicit
-
 The system prepares a context summary and alerts a person so takeover can happen without discarding the lead's recent context.
 
 ### Calendar confirmation is gated
-
 The scheduling tool contract requires availability checking before event creation and alternatives when the requested slot is unavailable.
 
 ## Verification status
 
 See [`docs/VERIFICATION.md`](docs/VERIFICATION.md) for the actual matrix.
 
-Current evidence includes implementation structure and a recorded demonstration. Fresh repeatable fixtures are still needed for:
-
-- HOT lead persistence/alert behavior;
-- explicit human-handoff behavior;
-- calendar available/unavailable paths;
-- CRM/tool/provider failure;
-- repeated/replayed side-effect behavior;
-- long-duration reliability, load, security, and monitoring.
+Current evidence includes implementation structure and a recorded demonstration. Fresh repeatable fixtures are still needed for HOT lead persistence/alert behavior, explicit human handoff, calendar available/unavailable paths, CRM/tool/provider failure, replay behavior, and long-duration reliability/load/security/monitoring.
 
 ## Security / public-export boundary
 
@@ -135,7 +124,7 @@ Public workflow files must not be assumed portable: environment-specific credent
 │   └── VERIFICATION.md
 ├── workflow/
 │   ├── README.md
-│   └── flowforge-ava.json.json   # historical filename; naming cleanup tracked separately
+│   └── flowforge-ava.json
 ├── SECURITY.md
 ├── LICENSE
 └── README.md
