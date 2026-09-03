@@ -10,6 +10,35 @@ FlowForge AVA is a **production-oriented multi-agent portfolio system** for What
 ![Airtable](https://img.shields.io/badge/Airtable-CRM-18BFFF?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
+## Table of contents
+
+- [Problem](#problem)
+- [What the checked-in workflow demonstrates](#what-the-checked-in-workflow-demonstrates)
+- [Generation history](#generation-history)
+- [Architecture](#architecture)
+- [Critical paths](#critical-paths)
+- [Workflow preview](#workflow-preview)
+- [Current flow](#current-flow)
+- [Recorded demonstration](#recorded-demonstration)
+- [Technology evidenced in the export](#technology-evidenced-in-the-export)
+- [Engineering decisions](#engineering-decisions)
+- [Verification status](#verification-status)
+- [Security / public-export boundary](#security--public-export-boundary)
+- [Known limitations](#known-limitations)
+- [Repository structure](#repository-structure)
+- [Evidence boundary](#evidence-boundary)
+
+### Generation quick links
+
+| Generation | Meaning | Status | Record |
+|---|---|---|---|
+| A | original lead / appointment bot structure | Historical | [README](generations/A/README.md) |
+| B | knowledge-base expansion + tool/agent prompt restructuring | Historical | [README](generations/B/README.md) |
+| C | prompt/tool rework while preserving actual topology after generated replacement workflows were rejected | Historical | [README](generations/C/README.md) |
+| D | current AVA export, current architecture/demo evidence, buyer-proof cleanup | **Current** | [README](generations/D/README.md) |
+
+The `generations/` folder is the engineering history. Historical generations do not get fake runtime demos/screenshots. Current Generation D uses the genuine media already checked into this repository.
+
 ## Problem
 
 Inbound WhatsApp leads can be lost when replies are slow, qualification is inconsistent, CRM state is incomplete, scheduling is disconnected, or a conversation reaches a point where a person should take over.
@@ -30,6 +59,12 @@ AVA explores how one visible assistant can coordinate focused backend agents whi
 - explicit rules against invented pricing, ROI, or unsupported timelines
 
 See [`workflow/README.md`](workflow/README.md) before importing [`workflow/flowforge-ava.json`](workflow/flowforge-ava.json). The export contains environment-specific resource/credential references that must be replaced before reuse.
+
+## Generation history
+
+The repository preserves four evidence-backed implementation generations rather than inventing semantic version numbers. Generation A is the earliest lead/appointment-bot structure; B expands the knowledge/tool structure; C records the prompt/tool rework after generated replacement workflows were rejected in favor of preserving actual topology; D is the current checked-in AVA generation.
+
+The current workflow remains the authority for present implementation claims. Historical records explain how the system changed, not what is running now.
 
 ## Architecture
 
@@ -116,9 +151,15 @@ Public workflow files must not be assumed portable: environment-specific credent
 
 ```text
 .
+├── README.md
 ├── architecture.drawio.png
 ├── critical-paths.svg
 ├── workflow-preview.png
+├── generations/
+│   ├── A/README.md
+│   ├── B/README.md
+│   ├── C/README.md
+│   └── D/README.md
 ├── docs/
 │   ├── CRITICAL_PATHS.md
 │   └── VERIFICATION.md
@@ -126,8 +167,7 @@ Public workflow files must not be assumed portable: environment-specific credent
 │   ├── README.md
 │   └── flowforge-ava.json
 ├── SECURITY.md
-├── LICENSE
-└── README.md
+└── LICENSE
 ```
 
 ## Evidence boundary
